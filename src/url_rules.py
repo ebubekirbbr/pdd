@@ -294,7 +294,7 @@ class url_rules:
         dga_in_words, len_lt_7, len_gt_7 
         """
         grouped_words = self.nlp_manager.parse(words_raw)
-        splitted_words = self.word_splitter._splitl(grouped_words['len_gt_7'])
+        splitted_words = self.word_splitter.splitl(grouped_words['len_gt_7'])
         """
         found_keywords, found_brands,
         similar_to_keyword, similar_to_brand,
