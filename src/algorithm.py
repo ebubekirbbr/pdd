@@ -109,7 +109,7 @@ class machine_learning_algorithm():
 
     def create_model_RF(self):
         train, target = self.preparing_train_data()
-        clf = RandomForestClassifier(n_estimators=10, random_state=0)
+        clf = RandomForestClassifier(n_estimators=10, random_state=0, verbose=1)
         model = clf.fit(train, target)
 
         return model
